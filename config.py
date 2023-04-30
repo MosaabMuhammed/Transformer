@@ -1,3 +1,5 @@
+import torch
+
 class Config:
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     batch_size = 128
